@@ -94,7 +94,7 @@ $(function () {
             });
         });
         it('has loaded', function () {
-            expect($('.entry').length).toBeGreaterThan(1);
+            expect($('.feed .entry').length).toBeGreaterThan(0);
         });
 
 
@@ -108,17 +108,15 @@ $(function () {
         var oldEntries;
         var newEntries;
         beforeEach(function (done) {
-            loadFeed(1, function () {
+            loadFeed(0, function () {
                 oldEntries = $('.entry-link');
-                done();
+                loadFeed(1, function () {
+                    newEntries = $('.entry-link');
+                    done();
+                });
             });
         });
-        beforeEach(function (done) {
-            loadFeed(2, function () {
-                newEntries = $('.entry-link');
-                done();
-            });
-        });
+
 
         it('has new content', function () {
             let count = [];
