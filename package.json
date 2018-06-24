@@ -1,0 +1,35 @@
+{
+  "name": "feed-reader-test",
+  "version": "1.0.0",
+  "description": "Feed reader",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "serve:test": "gulp serve:test",
+    "serve:build": "gulp serve:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forrestw92/Feed-reader-test.git"
+  },
+  "author": "Forrest Walker",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/forrestw92/Feed-reader-test/issues"
+  },
+  "homepage": "https://github.com/forrestw92/Feed-reader-test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-minify": "^3.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "run-sequence": "^2.2.1"
+  }
+}
